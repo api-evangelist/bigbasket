@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/bb-tech
+note: >-
+  bigbasket (Tata-owned online grocery) publishes no public API client SDKs.
+  The only first-party public packages are open-source react-admin UI component
+  libraries under the @bb-tech npm org, sourced from github.com/BigBasket. These
+  are front-end component libraries, NOT clients for a bigbasket API, so no
+  `SDKs` pointer is emitted.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@bb-tech/ra-components"
+    url: https://www.npmjs.com/package/@bb-tech/ra-components
+    repository: https://github.com/BigBasket/ra-components
+    install: npm install @bb-tech/ra-components
+    description: Additional open-source components for react-admin 4.x
+    kind: ui-components
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@bb-tech/ra-treemenu"
+    url: https://www.npmjs.com/package/@bb-tech/ra-treemenu
+    install: npm install @bb-tech/ra-treemenu
+    description: Tree menu component for react-admin
+    kind: ui-components
+    official: true

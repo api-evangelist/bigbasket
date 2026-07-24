@@ -1,8 +1,24 @@
 aid: bigbasket
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bigbasket.png
 name: bigbasket
-description: 'bigbasket is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'bigbasket is India''s largest online grocery and daily-essentials retailer, now part of the
+  Tata Group, delivering fresh produce, packaged foods, household, and personal-care products across Indian
+  cities via web and mobile apps (bigbasket, bbnow, and bbdaily subscription delivery). Surfaced as a
+  Bessemer Venture Partners portfolio company and added to the API Evangelist network. bigbasket operates
+  as a consumer app rather than an API platform: it publishes no public developer portal, API documentation,
+  or client SDKs. Its only first-party public developer surface is the github.com/BigBasket organization and
+  the open-source @bb-tech react-admin UI component libraries on npm.'
 url: https://raw.githubusercontent.com/api-evangelist/bigbasket/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- E-commerce
+- Grocery
+- Retail
+- Online Grocery
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bigbasket-domain-security.yml
 - type: Website
   url: https://www.bigbasket.com/
+- type: GitHubOrganization
+  url: https://github.com/BigBasket
+- type: Packages
+  url: packages/bigbasket-packages.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
